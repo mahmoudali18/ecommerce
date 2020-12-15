@@ -128,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../realtime" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -164,7 +164,7 @@
       <workItem from="1605438247337" duration="126330000" />
       <workItem from="1606381101462" duration="12145000" />
       <workItem from="1606427630493" duration="56844000" />
-      <workItem from="1606942071743" duration="18347000" />
+      <workItem from="1606942071743" duration="43697000" />
     </task>
     <servers />
   </component>
@@ -172,14 +172,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="325" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607269786003">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="325" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607269786003" />
     <state x="347" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607145300523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="347" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607145300523" />
-    <state x="410" y="59" key="FileChooserDialogImpl" timestamp="1606473611514">
+    <state x="410" y="59" key="FileChooserDialogImpl" timestamp="1607678679601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="410" y="59" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606473611514" />
+    <state x="410" y="59" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607678679601" />
     <state x="149" y="0" key="SettingsEditor" timestamp="1607080230060">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

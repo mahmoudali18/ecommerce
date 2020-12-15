@@ -46,6 +46,8 @@
                                         <form class="form" action="{{route('admin.vendors.store')}}"
                                               method="POST"
                                               enctype="multipart/form-data">
+                                            <input type="hidden"  value="" id="latitude" name="latitude">
+                                            <input type="hidden" value="" id="longitude"  name="longitude">
                                             @csrf
                                             <div class="form-group">
                                                 <label> لوجو التجار </label>

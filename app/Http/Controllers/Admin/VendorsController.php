@@ -54,7 +54,9 @@ class VendorsController extends Controller
                 'address'=>$request->address,
                 'logo'=>$file_pass,
                 'category_id'=>$request->category_id,
-               'password'=>$request ->password
+               'password'=>$request ->password,
+               'latitude'=>$request ->latitude,
+               'longitude'=>$request ->longitude,
 
             ]);
 
@@ -89,46 +91,55 @@ class VendorsController extends Controller
 
 
 
-    public function update($id,VendorRequest $request)
+    public function update($id, VendorRequest $request)
     {
 
         try {
-            $vendor = Vendor::selection()->find($id);
-            if (!$vendor) {
-                return redirect()->route('admin.vendors')->with(['error' => 'هذا المتجر غير موجود او ربما يكون محذوف']);
-            }
+
+            $vendor = Vendor::Selection()->find($id);
+            if (!$vendor)
+                return redirect()->route('admin.vendors')->with(['error' => 'هذا المتجر غير موجود او ربما يكون محذوف ']);
+
 
             DB::beginTransaction();
             //  save image    " if it exist in request "
-            if ($request->has('logo')) {
-                $file_pass = uploadImage('vendors', $request->logo);
-
+            if ($request->has('logo') ) {
+                $filePath = uploadImage('vendors', $request->logo);
                 Vendor::where('id', $id)
                     ->update([
-                        'logo' => $file_pass,
+                        'logo' => $filePath,
                     ]);
             }
 
+
+            if (!$request->has('active'))
+                $request->request->add(['active' => 0]);
+            else
+                $request->request->add(['active' => 1]);
+
+
             $data = $request->except('_token', 'id', 'logo', 'password');   //الاميل و البسورد  علشان انا بحدثهم بشرط منفصل
 
+
             //  save password    " if it exist in request "
-            if ($request->has('password')) {
+            if ($request->has('password') && !is_null($request->  password)) {
                 $data['password'] = $request->password;
             }
 
+
             Vendor::where('id', $id)
-                ->update([
+                ->update(
                     $data
-                ]);
+                );
 
             DB::commit();
             return redirect()->route('admin.vendors')->with(['success' => 'تم التحديث بنجاح']);
-
-        }catch (\Exception $exception){
+        } catch (\Exception $exception) {
            // return $exception;
-            DB::rollBack();
+            DB::rollback();
             return redirect()->route('admin.vendors')->with(['error' => 'حدث خطا ما برجاء المحاوله لاحقا']);
         }
+
     }
 
 

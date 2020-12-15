@@ -36,14 +36,23 @@ class MainCategory extends Model
     }
 
 
+    public function scopeDeafultCategory($query){
+       return $query->where('translation_of',0);
+    }
+
+
     public function getPhotoAttribute($val){
         return ($val !== null) ? asset('assets/'.$val) : "";
 
     }
 
-
+    // get all translation categories
     public function categories(){
        return $this->hasMany(self::class,'translation_of');
+    }
+
+    public function subCategories(){
+        return $this->hasMany('App\Models\SubCategory','category_id','id');
     }
 
 

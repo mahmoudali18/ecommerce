@@ -71,6 +71,26 @@ Route::group(['namespace'=>'Admin','middleware' => 'auth:admin'],function (){
     });
     ############################ End vendors Routes ###############################
 
+
+    ############################ Begin sub categories Routes ###############################
+    Route::group(['prefix'=>'sub_categories'],function (){
+        Route::get('/','SubCategoriesController@index')->name('admin.subcategories');
+        Route::get('create','SubCategoriesController@create')->name('admin.subcategories.create');
+        Route::post('store','SubCategoriesController@store')->name('admin.subcategories.store');     //
+
+        Route::get('edit/{id}','SubCategoriesController@edit')->name('admin.subcategories.edit');     //
+        Route::post('update/{id}','SubCategoriesController@update')->name('admin.subcategories.update');  //
+
+        Route::get('delete/{id}','SubCategoriesController@destroy')->name('admin.subcategories.delete');  //
+
+
+
+        Route::get('changeStatus/{id}','SubCategoriesController@changeStatus')->name('admin.subcategories.status');  //
+
+    });
+    ############################ End sub categories Routes ###############################
+
+
 });
 
 
@@ -79,5 +99,21 @@ Route::group(['namespace'=>'Admin','middleware' => 'guest:admin'],function (){
     Route::post('login','LoginController@login')->name('admin.login');
 
 });
+
+
+
+
+#############################  Begin  test part  Routes   #####################################     [54   59]
+Route::get('subcategory',function(){
+    $maincategpry = \App\Models\MainCategory::find(13);
+    return $maincategpry->subCategories;
+});
+
+
+Route::get('maincategory',function(){
+    $subcategpry = \App\Models\SubCategory::find(1);
+    return $subcategpry->mainCategory;
+});
+#############################  end  test part  Routes   #####################################
 
 
