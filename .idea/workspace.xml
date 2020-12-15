@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9148bae7-64f1-441b-8e3b-d1e2fb0bd364" name="Default Changelist" comment="" />
+    <list default="true" id="9148bae7-64f1-441b-8e3b-d1e2fb0bd364" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +12,15 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -128,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../realtime" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -165,6 +176,7 @@
       <workItem from="1606381101462" duration="12145000" />
       <workItem from="1606427630493" duration="56844000" />
       <workItem from="1606942071743" duration="43697000" />
+      <workItem from="1608027422317" duration="1255000" />
     </task>
     <servers />
   </component>
@@ -172,6 +184,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="427" y="96" key="#Web_Browsers" timestamp="1608028536526">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="427" y="96" key="#Web_Browsers/0.0.1366.728@0.0.1366.728" timestamp="1608028536526" />
     <state x="325" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607269786003">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -192,6 +208,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1606251659479" />
+    <state x="175" y="31" key="Vcs.Push.Dialog.v2" timestamp="1608028505030">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="31" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608028505030" />
     <state x="255" y="159" key="run.anything.popup" timestamp="1605477700337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
